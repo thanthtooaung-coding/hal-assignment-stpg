@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperPrint - Create Custom Package</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>PaperPrint</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Product & Services</a></li>
+                <li><a href="packages.html" class="nav-link">Packages</a></li>
+                <li><a href="about.html" class="nav-link">About & Contact Us</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="package-selection-page">
+        <div class="container">
+            <h1>Create Custom Package</h1>
+            
+            <form class="selection-form" id="selection-form">
+                <div class="items-grid">
+                    <div class="item-card" data-item="business-cards" data-price="25">
+                        <div class="item-image">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Business Cards</h3>
+                            <p>Professional business cards with custom design</p>
+                            <span class="price">$25</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="flyers" data-price="35">
+                        <div class="item-image">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Flyers</h3>
+                            <p>Eye-catching flyers for promotions</p>
+                            <span class="price">$35</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="brochures" data-price="45">
+                        <div class="item-image">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Brochures</h3>
+                            <p>Tri-fold brochures with premium finish</p>
+                            <span class="price">$45</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="banners" data-price="75">
+                        <div class="item-image">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Banners</h3>
+                            <p>Large format banners for events</p>
+                            <span class="price">$75</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="posters" data-price="30">
+                        <div class="item-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Posters</h3>
+                            <p>High-quality poster printing</p>
+                            <span class="price">$30</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="stickers" data-price="20">
+                        <div class="item-image">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Stickers</h3>
+                            <p>Custom vinyl stickers</p>
+                            <span class="price">$20</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="letterheads" data-price="40">
+                        <div class="item-image">
+                            <i class="fas fa-file-text"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Letterheads</h3>
+                            <p>Professional letterhead design</p>
+                            <span class="price">$40</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="envelopes" data-price="25">
+                        <div class="item-image">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Envelopes</h3>
+                            <p>Custom printed envelopes</p>
+                            <span class="price">$25</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="calendars" data-price="55">
+                        <div class="item-image">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Calendars</h3>
+                            <p>Custom wall or desk calendars</p>
+                            <span class="price">$55</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="notebooks" data-price="35">
+                        <div class="item-image">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Notebooks</h3>
+                            <p>Custom branded notebooks</p>
+                            <span class="price">$35</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="mugs" data-price="15">
+                        <div class="item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Mugs</h3>
+                            <p>Custom printed ceramic mugs</p>
+                            <span class="price">$15</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="tshirts" data-price="25">
+                        <div class="item-image">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>T-Shirts</h3>
+                            <p>Custom printed t-shirts</p>
+                            <span class="price">$25</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="bags" data-price="30">
+                        <div class="item-image">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Bags</h3>
+                            <p>Custom tote and shopping bags</p>
+                            <span class="price">$30</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="keychains" data-price="10">
+                        <div class="item-image">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Keychains</h3>
+                            <p>Custom branded keychains</p>
+                            <span class="price">$10</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="magnets" data-price="12">
+                        <div class="item-image">
+                            <i class="fas fa-magnet"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Magnets</h3>
+                            <p>Custom refrigerator magnets</p>
+                            <span class="price">$12</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="pens" data-price="8">
+                        <div class="item-image">
+                            <i class="fas fa-pen"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Pens</h3>
+                            <p>Custom branded pens</p>
+                            <span class="price">$8</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="mousepads" data-price="18">
+                        <div class="item-image">
+                            <i class="fas fa-mouse"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Mouse Pads</h3>
+                            <p>Custom printed mouse pads</p>
+                            <span class="price">$18</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="coasters" data-price="15">
+                        <div class="item-image">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Coasters</h3>
+                            <p>Custom drink coasters</p>
+                            <span class="price">$15</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="labels" data-price="22">
+                        <div class="item-image">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Labels</h3>
+                            <p>Custom product labels</p>
+                            <span class="price">$22</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="folders" data-price="28">
+                        <div class="item-image">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Folders</h3>
+                            <p>Custom presentation folders</p>
+                            <span class="price">$28</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="bookmarks" data-price="12">
+                        <div class="item-image">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Bookmarks</h3>
+                            <p>Custom printed bookmarks</p>
+                            <span class="price">$12</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="postcards" data-price="20">
+                        <div class="item-image">
+                            <i class="fas fa-mail-bulk"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Postcards</h3>
+                            <p>Custom promotional postcards</p>
+                            <span class="price">$20</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="invitations" data-price="35">
+                        <div class="item-image">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Invitations</h3>
+                            <p>Custom event invitations</p>
+                            <span class="price">$35</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="certificates" data-price="30">
+                        <div class="item-image">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Certificates</h3>
+                            <p>Custom award certificates</p>
+                            <span class="price">$30</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="menus" data-price="25">
+                        <div class="item-image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Menus</h3>
+                            <p>Restaurant menu printing</p>
+                            <span class="price">$25</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="table-tents" data-price="18">
+                        <div class="item-image">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Table Tents</h3>
+                            <p>Promotional table tents</p>
+                            <span class="price">$18</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="door-hangers" data-price="22">
+                        <div class="item-image">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Door Hangers</h3>
+                            <p>Custom door hanger marketing</p>
+                            <span class="price">$22</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+                </div>
+
+                <div class="selection-summary">
+                    <div class="selected-items" id="selected-items">
+                        <h3>Selected Items: <span id="selected-count">0</span></h3>
+                        <div class="selected-list" id="selected-list"></div>
+                    </div>
+                    <div class="total-section">
+                        <h3>Total: $<span id="total-amount">0</span></h3>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button type="button" class="continue-btn" id="continue-btn" disabled>
+                        Payment
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i> X</a>
+                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy and Policy</a>
+                <a href="#">Terms and Condition</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

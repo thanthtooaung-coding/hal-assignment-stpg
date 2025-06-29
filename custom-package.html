@@ -154,5 +154,54 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const selectedPackageItems = localStorage.getItem('selectedPackageItems');
+        const packageTotal = localStorage.getItem('packageTotal');
+        
+        if (selectedPackageItems && packageTotal) {
+            const items = JSON.parse(selectedPackageItems);
+            const total = parseInt(packageTotal);
+            
+            const packageItemsContainer = document.querySelector('.package-items');
+            if (packageItemsContainer) {
+                packageItemsContainer.innerHTML = '<h3>Selected Items:</h3>';
+                items.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'selected-package-item';
+                    itemDiv.innerHTML = `
+                        <div class="item-checkbox">
+                            <input type="checkbox" checked disabled>
+                            <label>${item.name} - $${item.price}</label>
+                        </div>
+                    `;
+                    packageItemsContainer.appendChild(itemDiv);
+                });
+            }
+                        
+            const totalCostSpan = document.getElementById('totalCost');
+            if (totalCostSpan) {
+                totalCostSpan.textContent = total;
+            }
+            
+            if (window.calculateTotal) {
+                const originalCalculateTotal = window.calculateTotal;
+                window.calculateTotal = function() {
+                    let calculatedTotal = total;
+                    
+                    const staffNumberInput = document.getElementById('staffNumber');
+                    if (staffNumberInput) {
+                        const staffCount = parseInt(staffNumberInput.value) || 0;
+                        calculatedTotal += staffCount * 25;
+                    }
+                    
+                    totalCostSpan.textContent = calculatedTotal;
+                };
+                
+                window.calculateTotal();
+            }
+        }
+    });
+</script>
 </body>
 </html>
