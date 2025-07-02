@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperPrint - Party Package Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>PaperPrint</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Product & Services</a></li>
+                <li><a href="packages.html" class="nav-link">Packages</a></li>
+                <li><a href="about.html" class="nav-link">About & Contact Us</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="package-selection-page">
+        <div class="container">
+            <h1>Party Package Details</h1>
+            
+            <div class="package-info">
+                <div class="package-card-main">
+                    <div class="package-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Party</h3>
+                    <h4>Party Packages</h4>
+                    <ul class="package-list">
+                        <li>• menus</li>
+                        <li>• napkins</li>
+                        <li>• place settings</li>
+                        <li>• tablecloths</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <form class="selection-form" id="selection-form">
+                <div class="items-grid">
+                    <div class="item-card" data-item="party-menus" data-price="25">
+                        <div class="item-image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Party Menus</h3>
+                            <p>Custom designed party menus</p>
+                            <span class="price">$25</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="napkins" data-price="15">
+                        <div class="item-image">
+                            <i class="fas fa-square"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Custom Napkins</h3>
+                            <p>Personalized party napkins</p>
+                            <span class="price">$15</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="place-settings" data-price="35">
+                        <div class="item-image">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Place Settings</h3>
+                            <p>Complete place setting cards</p>
+                            <span class="price">$35</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="tablecloths" data-price="45">
+                        <div class="item-image">
+                            <i class="fas fa-border-all"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Custom Tablecloths</h3>
+                            <p>Branded party tablecloths</p>
+                            <span class="price">$45</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="invitations" data-price="30">
+                        <div class="item-image">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Party Invitations</h3>
+                            <p>Custom party invitations</p>
+                            <span class="price">$30</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+
+                    <div class="item-card" data-item="banners" data-price="50">
+                        <div class="item-image">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Party Banners</h3>
+                            <p>Large celebration banners</p>
+                            <span class="price">$50</span>
+                        </div>
+                        <button type="button" class="select-btn" data-selected="false">
+                            <i class="fas fa-plus"></i> Click
+                        </button>
+                    </div>
+                </div>
+
+                <div class="selection-summary">
+                    <div class="selected-items" id="selected-items">
+                        <h3>Selected Items: <span id="selected-count">0</span></h3>
+                        <div class="selected-list" id="selected-list"></div>
+                    </div>
+                    <div class="total-section">
+                        <h3>Total: $<span id="total-amount">0</span></h3>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button type="button" class="continue-btn" id="continue-btn" disabled>
+                        Create Custom Package
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i> X</a>
+                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy and Policy</a>
+                <a href="#">Terms and Condition</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
