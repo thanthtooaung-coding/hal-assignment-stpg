@@ -348,6 +348,79 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem;
 }
 
+.products-offered {
+    display: block;
+    margin-top: 4rem;
+}
+
+.product-offered-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+.product-offered-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.product-offered-header p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.product-gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.product-gallery-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.product-gallery-card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.product-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-image-item {
+    text-align: left;
+}
+
+.product-image-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.product-image-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-image-item span {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
 /* Packages Page */
 .packages-page {
     padding: 2rem 0;
