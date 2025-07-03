@@ -1032,9 +1032,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-image {
-    font-size: 3rem;
-    color: #3498db;
     margin-bottom: 1rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
 }
 
 .item-card.selected .item-image {
